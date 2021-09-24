@@ -1,0 +1,2 @@
+Timer.c:13:6:timerConfigure	24	static
+Timer.c:20:6:timerConfigureCaptureCompare	24	static
