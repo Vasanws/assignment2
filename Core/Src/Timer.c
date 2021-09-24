@@ -8,7 +8,7 @@
 
 #include "Rcc.h"
 #include "Timer.h"
-//#include "Nvic.h"
+
 
 void timerConfigure(TimerReg *tim, TimerConfig cfg) {
   tim->CR1 = 0xFFFF & cfg;
