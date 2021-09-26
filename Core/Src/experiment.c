@@ -22,7 +22,7 @@ void experiment1() {
 }
 
 void experiment2() {
-	volatile int button_state = getReadPin(gpioB, 8);
+	volatile int button_state = gpioReadPin(gpioB, 8);
 	rcc->APB1ENR = 1 << 2; // TIM4 RST
 	if(button_state) {
 	  timerConfigureCaptureCompare(timer4, TIM_OC3M_FORCE_ACTIV);  // FORCE_ACTIVE
