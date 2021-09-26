@@ -1,0 +1,4 @@
+experiment.c:17:6:experiment1	8	static
+experiment.c:24:6:experiment2	16	static
+experiment.c:34:6:experiment3	4	static
+experiment.c:38:6:experiment4	4	static

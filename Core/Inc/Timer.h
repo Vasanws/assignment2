@@ -24,12 +24,12 @@
 #define TIMER5_BASE_ADDRESS			  0x40000C00
 #define TIMER6_BASE_ADDRESS			  0x40001000
 
-#define tim1						((TimerReg*)TIMER1_BASE_ADDRESS))
-#define tim2						((TimerReg*)TIMER2_BASE_ADDRESS))
-#define tim3						((TimerReg*)TIMER3_BASE_ADDRESS))
-#define tim4						((TimerReg*)TIMER4_BASE_ADDRESS))
-#define tim5						((TimerReg*)TIMER5_BASE_ADDRESS))
-#define tim6						((TimerReg*)TIMER6_BASE_ADDRESS))
+#define timer1						((TimerReg*)TIMER1_BASE_ADDRESS)
+#define timer2						((TimerReg*)TIMER2_BASE_ADDRESS)
+#define timer3						((TimerReg*)TIMER3_BASE_ADDRESS)
+#define timer4						((TimerReg*)TIMER4_BASE_ADDRESS)
+#define timer5						((TimerReg*)TIMER5_BASE_ADDRESS)
+#define timer6						((TimerReg*)TIMER6_BASE_ADDRESS)
 
 typedef struct TimerReg_t TimerReg;
 struct TimerReg_t {
@@ -207,7 +207,6 @@ typedef enum {
 	TIM_CC4NP_HIGH			  = 0LL << (15 + 32), TIM_CC4NP_LOW		  = 1LL << (15 + 32),
 }TimerCaptureCompareConfig;
 
-void timerConfigureX(TimerReg *tim);
 void timerConfigure(TimerReg *tim, TimerConfig cfg);
 void timerConfigureCaptureCompare(TimerReg *tim, TimerCaptureCompareConfig cfg);
 

@@ -24,6 +24,8 @@
 /* USER CODE BEGIN Includes */
 #include "Gpio.h"
 #include "RCC.h"
+#include "Timer.h"
+#include "nvic.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,7 +92,7 @@ int main(void)
   MX_GPIO_Init();
   MX_UART5_Init();
   /* USER CODE BEGIN 2 */
-
+  experiment1();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,7 +102,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
   }
   /* USER CODE END 3 */
 }
